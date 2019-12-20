@@ -1,0 +1,53 @@
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.9rem 1.5rem;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #e50914;
+}
