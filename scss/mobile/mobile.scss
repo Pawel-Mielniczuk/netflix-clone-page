@@ -1,6 +1,6 @@
 /*300px to 500px*/
 
-@media screen and (min-width: 18.75em) and (max-width: 31.25em) {
+@media screen and (max-width: 35.81em) {
   .intro-section {
     min-height: 65vh;
   }
@@ -10,18 +10,19 @@
   }
 
   .intro-section__link {
-    padding: 0.4rem 1rem;
+    padding: 0.2rem 0.8rem;
   }
 
   .intro-section__content {
     padding: 1.875rem;
+    margin-top: 1.5rem;
     min-width: 90%;
   }
   .intro-section__content-subtitle {
     font-size: 1.3rem;
   }
   .intro-section__content-title {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 
   .intro-section__btn {
