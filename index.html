@@ -49,7 +49,7 @@
             <button class="btn--white" type="submit">Try it now<span>&gt;</span></button>
           </div>
           <div class="flex-element-2 showcase-section__animation-container">
-            <div class="showcase-section__img-container">
+            <figure class="showcase-section__img-container">
               <img
                 alt=""
                 class="our-story-card-img"
@@ -70,17 +70,29 @@
                   />
                 </video>
               </div>
-            </div>
+            </figure>
           </div>
         </div>
       </section>
       <section class="download-section">
-        <div class="download-section__container">
-          <div class="download-section__img-container">
-            <img src="/images/mobile-phone.jpg" alt="">
-          </div>
+        <div class="flex-container download-section__container">
+          <figure class="download-section__img-container">
+            <div class="download-section__gif-container">
+              <img class="download-section__gif-container-img" src="/images/boxshot.png" alt="">
+              <div class="gif-container__txt">
+                <p class="gif-container_txt-para-1">Stranger Things</p>
+                <p class="gif-container_txt-para-2">Downloading...</p>
+              </div>
+              <img class="download-section__gif-container-gif"  src="/images/download-icon.gif" alt="">
+            </div>
+              <picture>
+                <source media="(max-width: 799px)" srcset="/images/mobile-phone-280.jpg">
+                <source media="(min-width: 600px)" srcset="/images/mobile-phone-380.jpg">
+                  <img class="download-section__img" src="/images/mobile-phone-380.jpg" alt="">
+              </picture>
+          </figure>
           <div class="download-section__txt-container">
-            <h2 class="title">Download your shows to watch on the go.</h2>
+            <h2 class="title">Download your shows<br/> to watch on the go.</h2>
             <h3 class="subtitle">Save your data and watch all your favorites offline.</h3>
             <button class="btn--white">Try it now</button>
           </div>

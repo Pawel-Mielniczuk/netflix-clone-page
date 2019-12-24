@@ -1,0 +1,64 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.download-section__img-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3rem;
+}
+
+.download-section__gif-container {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  min-height: 6.25rem;
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  background-color: #000000;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.download-section__gif-container-img {
+  height: 6.25rem;
+}
+
+.gif-container_txt-para-1 {
+  font-size: 1rem;
+}
+
+.gif-container_txt-para-2 {
+  font-size: 0.9rem;
+  color: #0071eb;
+}
