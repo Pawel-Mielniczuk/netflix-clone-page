@@ -80,3 +80,15 @@
     text-align: center;
   }
 }
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .showcase-section__txt-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .showcase-section__txt-container .subtitle {
+    margin-bottom: 0.5rem;
+  }
+}

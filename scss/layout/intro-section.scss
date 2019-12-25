@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 36em) {
   .intro-section {
-    min-height: 65vh;
+    min-height: 95vh;
   }
 
   .netflix-logo {
@@ -84,14 +84,36 @@
   }
   .intro-section__content-subtitle {
     font-size: 1.3rem;
+    z-index: 3;
   }
   .intro-section__content-title {
     font-size: 1.7rem;
+    z-index: 3;
   }
 
   .intro-section__btn {
     font-size: 1rem;
     min-height: 2.5rem;
     padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .intro-section__content-title {
+    font-size: 3rem;
+  }
+
+  .netflix-logo {
+    width: 6rem;
+  }
+
+  .intro-section__link {
+    padding: 0.4rem 1.2rem;
+  }
+
+  .intro-section__btn {
+    font-size: 1rem;
+    min-height: 2.2rem;
+    padding: 0.7rem 0.9rem;
   }
 }

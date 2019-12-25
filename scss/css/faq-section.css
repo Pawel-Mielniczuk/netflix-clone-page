@@ -29,12 +29,15 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .faq-section__container details {
+  text-align: left;
   padding: 1rem;
   background-color: #303030;
   margin: 0.5rem;
+  width: 50rem;
 }
 
 .faq-section__container details:last-of-type {
@@ -52,27 +55,22 @@
 
 /*MEDIA QUERIES FOR FAQ SECTION*/
 /*MAX-WIDTH = 550x = 34.375em*/
-@media (max-width: 34.375em) {
-  .faq-section {
-    padding: 2rem 0;
-  }
-  .faq-section .title {
+@media (max-width: 35.9em) {
+  .faq-section__container .title {
     margin: 1rem 0;
   }
-  .faq-section button {
-    margin: 1rem 0;
+  .faq-section__container details {
+    width: 90vw;
+    margin: 0.4rem 0;
   }
-  .faq-section__container {
-    margin: 0 auto;
+}
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .faq-section__container details {
+    width: 75vw;
   }
-  details {
-    min-width: 98vw;
-    padding: 0;
-  }
-  summary {
-    padding: 0;
-  }
-  details p {
-    padding: 0;
+  .faq-section__container details summary p {
+    padding: 1rem 0.8rem;
+    font-size: 1.3rem;
   }
 }

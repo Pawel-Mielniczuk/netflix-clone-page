@@ -53,3 +53,14 @@
     text-align: center;
   }
 }
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .showcase-section__txt-container {
+    align-items: center;
+    text-align: center;
+
+    .subtitle {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

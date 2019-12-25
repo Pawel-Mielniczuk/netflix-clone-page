@@ -90,6 +90,12 @@ button {
   }
 }
 
+@media (max-width: 949px) {
+  .btn--white {
+    display: none;
+  }
+}
+
 section {
   border-bottom: 8px solid #222222;
   padding: 4.375rem 2.5rem;
@@ -191,7 +197,7 @@ img {
 /*MEDIA QUERIS MAX-WIDTH:576PX  36em*/
 @media screen and (max-width: 36em) {
   .intro-section {
-    min-height: 65vh;
+    min-height: 95vh;
   }
   .netflix-logo {
     width: 6rem;
@@ -206,14 +212,33 @@ img {
   }
   .intro-section__content-subtitle {
     font-size: 1.3rem;
+    z-index: 3;
   }
   .intro-section__content-title {
     font-size: 1.7rem;
+    z-index: 3;
   }
   .intro-section__btn {
     font-size: 1rem;
     min-height: 2.5rem;
     padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .intro-section__content-title {
+    font-size: 3rem;
+  }
+  .netflix-logo {
+    width: 6rem;
+  }
+  .intro-section__link {
+    padding: 0.4rem 1.2rem;
+  }
+  .intro-section__btn {
+    font-size: 1rem;
+    min-height: 2.2rem;
+    padding: 0.7rem 0.9rem;
   }
 }
 
@@ -301,6 +326,18 @@ img {
   }
 }
 
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .showcase-section__txt-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .showcase-section__txt-container .subtitle {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,46 +362,6 @@ img {
   margin-right: 3rem;
 }
 
-.download-section__gif-container {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 70%;
-  min-height: auto;
-  border-radius: 10px;
-  padding: 0.5rem 0.75rem;
-  background-color: #000000;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-}
-
-.download-section__gif-container-img {
-  height: 6.25rem;
-}
-
-.gif-container_txt-para-1 {
-  font-size: 1rem;
-}
-
-.gif-container_txt-para-2 {
-  font-size: 0.9rem;
-  color: #0071eb;
-}
-
 /*MEDIA QUERIS MAX-WIDTH:576PX  36em*/
 @media screen and (max-width: 36em) {
   .download-section__txt-container {
@@ -373,20 +370,14 @@ img {
         -ms-flex-order: -1;
             order: -1;
   }
-  .download-section__gif-container {
-    min-height: auto;
-  }
-  .gif-container_txt-para-1 {
-    font-size: 0.8rem;
-  }
-  .gif-container_txt-para-2 {
-    font-size: 0.7rem;
-  }
-  .download-section__txt-container .btn--white {
-    display: none;
-  }
-  .download-section__gif-container-img {
-    height: auto;
+}
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .download-section__txt-container {
+    text-align: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -492,12 +483,15 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .faq-section__container details {
+  text-align: left;
   padding: 1rem;
   background-color: #303030;
   margin: 0.5rem;
+  width: 50rem;
 }
 
 .faq-section__container details:last-of-type {
@@ -515,28 +509,23 @@ img {
 
 /*MEDIA QUERIES FOR FAQ SECTION*/
 /*MAX-WIDTH = 550x = 34.375em*/
-@media (max-width: 34.375em) {
-  .faq-section {
-    padding: 2rem 0;
-  }
-  .faq-section .title {
+@media (max-width: 35.9em) {
+  .faq-section__container .title {
     margin: 1rem 0;
   }
-  .faq-section button {
-    margin: 1rem 0;
+  .faq-section__container details {
+    width: 90vw;
+    margin: 0.4rem 0;
   }
-  .faq-section__container {
-    margin: 0 auto;
+}
+
+@media (min-width: 36em) and (max-width: 59.313em) {
+  .faq-section__container details {
+    width: 75vw;
   }
-  details {
-    min-width: 98vw;
-    padding: 0;
-  }
-  summary {
-    padding: 0;
-  }
-  details p {
-    padding: 0;
+  .faq-section__container details summary p {
+    padding: 1rem 0.8rem;
+    font-size: 1.3rem;
   }
 }
 

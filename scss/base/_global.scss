@@ -91,6 +91,12 @@ button {
   }
 }
 
+@media (max-width: 949px) {
+  .btn--white {
+    display: none;
+  }
+}
+
 section {
   border-bottom: 8px solid #222222;
   padding: 4.375rem 2.5rem;
