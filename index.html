@@ -43,18 +43,17 @@
           <div class="flex-element-1 showcase-section__txt-container">
             <h2 class="title">Enjoy on your TV.</h2 c>
             <h3 class="subtitle">
-              Watch on smart TVs, PlayStation, Xbox, <br />
-              Chromecast, Apple TV, Blu-ray players and<br/> more.
+              Watch on smart TVs, PlayStation, Xbox, 
+              Chromecast, Apple TV, Blu-ray players and more.
             </h3>
-            <button class="btn--white" type="submit">Try it now<span>&gt;</span></button>
+            <button class="showcase-section__btn btn--white" type="submit">Try it now<span>&gt;</span></button>
           </div>
           <div class="flex-element-2 showcase-section__animation-container">
             <figure class="showcase-section__img-container">
               <img
                 alt=""
                 class="our-story-card-img"
-                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-                data-uia="our-story-card-img"
+                src="./images/tv.png"
               />
               <div class="video-container">
                 <video
@@ -65,7 +64,7 @@
                   loop=""
                 >
                   <source
-                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                    src="./images/video-tv.m4v"
                     type="video/mp4"
                   />
                 </video>
@@ -78,12 +77,20 @@
         <div class="flex-container download-section__container">
           <figure class="download-section__img-container">
             <div class="download-section__gif-container">
-              <img class="download-section__gif-container-img" src="/images/boxshot.png" alt="">
+              <picture>
+                <source media="(max-width: 569px)" srcset="/images/boxshot-50.png">
+                <!-- <source media="(min-width: 600px)" srcset="/images/mobile-phone-380.jpg"> -->
+                <img class="download-section__gif-container-img" src="/images/boxshot.png" alt="">
+              </picture>
               <div class="gif-container__txt">
                 <p class="gif-container_txt-para-1">Stranger Things</p>
                 <p class="gif-container_txt-para-2">Downloading...</p>
               </div>
-              <img class="download-section__gif-container-gif"  src="/images/download-icon.gif" alt="">
+              <picture>
+                <source media="(max-width: 569px)" srcset="/images/download-icon-48.gif">
+                 
+                <img class="gif-img" src="/images/download-icon.gif" alt="">
+              </picture>
             </div>
               <picture>
                 <source media="(max-width: 799px)" srcset="/images/mobile-phone-280.jpg">
@@ -131,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="faq-section">
+      <!-- <section class="faq-section">
         <div class="faq-section__container">
           <h2 class="title">Frequently Asked Questions</h2>
           <details>
@@ -166,7 +173,7 @@
         <button>Try it now
           <span>&gt;</span>
         </button>
-      </section>
+      </section> -->
     </main>
     <footer class="page-footer">
       <section class="footer-section">

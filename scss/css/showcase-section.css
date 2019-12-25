@@ -67,3 +67,16 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+/*MEDIA QUERIS MAX-WIDTH:576PX  36em*/
+@media screen and (max-width: 36em) {
+  .showcase-section__btn {
+    display: none;
+  }
+  .showcase-section__txt-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}

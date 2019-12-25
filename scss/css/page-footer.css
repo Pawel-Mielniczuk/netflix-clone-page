@@ -37,3 +37,14 @@
 .footer-nav .nav-list .nav-link:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 36em) {
+  .nav-list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33vw;
+            flex: 1 1 33vw;
+  }
+  .nav-list .nav-item {
+    text-align: center;
+  }
+}

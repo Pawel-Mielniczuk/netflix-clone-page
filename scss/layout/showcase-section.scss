@@ -40,3 +40,16 @@
     object-fit: contain;
   }
 }
+
+/*MEDIA QUERIS MAX-WIDTH:576PX  36em*/
+
+@media screen and (max-width: 36em) {
+  .showcase-section__btn {
+    display: none;
+  }
+
+  .showcase-section__txt-container {
+    align-items: center;
+    text-align: center;
+  }
+}

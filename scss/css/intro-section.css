@@ -27,7 +27,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -67,6 +67,7 @@
           flex-direction: column;
   text-align: center;
   z-index: 2;
+  margin-top: 2rem;
 }
 
 .intro-section__content-subtitle {
@@ -75,4 +76,33 @@
 
 .intro-section__btn span {
   margin-left: 0.5rem;
+}
+
+/*MEDIA QUERIS MAX-WIDTH:576PX  36em*/
+@media screen and (max-width: 36em) {
+  .intro-section {
+    min-height: 65vh;
+  }
+  .netflix-logo {
+    width: 6rem;
+  }
+  .intro-section__link {
+    padding: 0.2rem 0.8rem;
+  }
+  .intro-section__content {
+    padding: 1.875rem;
+    margin-top: 1.5rem;
+    min-width: 90%;
+  }
+  .intro-section__content-subtitle {
+    font-size: 1.3rem;
+  }
+  .intro-section__content-title {
+    font-size: 1.7rem;
+  }
+  .intro-section__btn {
+    font-size: 1rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.8rem;
+  }
 }

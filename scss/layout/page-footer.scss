@@ -24,3 +24,13 @@
     }
   }
 }
+
+@media screen and (max-width: 36em) {
+  .nav-list {
+    flex: 1 1 33vw;
+
+    .nav-item {
+      text-align: center;
+    }
+  }
+}
