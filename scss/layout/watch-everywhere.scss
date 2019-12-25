@@ -1,0 +1,29 @@
+.container-test {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-watch-everywhere__container-video {
+}
+
+.watch-everywhere__img-container {
+  position: relative;
+  overflow: hidden;
+
+  .video-container-2 {
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    z-index: -1;
+
+    .video-test {
+      max-width: 81%;
+      max-height: 90%;
+      display: inline-block;
+      // vertical-align: baseline;
+      object-fit: contain;
+    }
+  }
+}
